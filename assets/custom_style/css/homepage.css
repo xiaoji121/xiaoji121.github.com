@@ -1,0 +1,33 @@
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	display: block;
+	clear: both;
+	height: 0;
+	content: "\0020";
+}
+body {
+	background-color: white;
+	background-image: url(/images/grid-18px-masked.png);
+	background-repeat: repeat-x;
+	background-position: 0 40px;
+}
+.motto{
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: bold;
+	padding: 0 0 10px 30px;
+	border-bottom: 2px solid #3D86C8;
+}
+
+.leftContent{
+	width: 740px;
+	float: left;
+	margin-right: 10px;
+}
+
+.rightContent{
+	width: 240px;
+	float: left;
+}
