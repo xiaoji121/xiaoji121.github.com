@@ -31,3 +31,42 @@ body {
 	width: 240px;
 	float: left;
 }
+
+.splash{
+	min-height: 800px;
+	min-width: 960px;
+}
+
+.splash h1.title{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.splash h2{
+	font-size: 16px;
+}
+
+.splash .thumbnail h4{
+	margin-bottom: 10px;
+}
+.splash .thumbnail p{
+	margin-left: 5px;
+}
+
+.post h1{
+	font-size: 18px;
+}
+
+.post h4{
+	margin-bottom: 10px;
+}
+
+.post h5.date{
+	font-weight: normal;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+.post p{
+	text-indent: 2em;
+}

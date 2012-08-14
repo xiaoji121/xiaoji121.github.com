@@ -95,7 +95,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : xiaoji121
+      short_name : xiaoji
     livefyre :
       site_id : 123
     intensedebate :

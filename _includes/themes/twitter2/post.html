@@ -2,7 +2,7 @@
   <div class="span9" style="width: 85%; margin-left: 90px;">
     <div class="content post">
       <h1 class="title">{{ page.title }}</h1>
-      {{ page.description }}
+      <h5 class="date">{{ page.description }}</h5>
       {{ content }}
     {% if page.next and page.categories == page.next.categories %}
       <hr>
