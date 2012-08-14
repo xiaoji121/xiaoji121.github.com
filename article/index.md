@@ -1,7 +1,10 @@
 ---
-layout: page
-title: "我想说两句"
+layout: splash
+title: "抒发骚情的菜地"
 ---
 {% include JB/setup %}
 
-###建设中，敬请期待。。。。。。
+<ul class="thumbnails">
+  {% assign pages_icons = site.tags.life %}
+  {% include custom/pages_reversed %}
+</ul>
