@@ -6,28 +6,15 @@
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/custom_style/css/homepage.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
-  <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  -->
+    <link href="/assets/custom_style/css/prettify.css" rel="stylesheet">
     <script type="text/javascript" src="/assets/custom_style/js/modernizr.js"></script>
+    <script type="text/javascript" src="/assets/custom_style/js/prettify.js"></script>
   </head>
 
-  <body>
+  <body onload="prettyPrint()">
 
     <div class="navbar">
       <div class="navbar-inner">
