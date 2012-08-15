@@ -1,7 +1,7 @@
 ---
 layout: page
-title: xiaoji121的个人博客
-description: 前端开发|程序员
+title: 前端开发_猿来如此_xiaoji121的个人博客
+description: 专注前端开发，喜欢jQuery，喜欢less，喜欢python，爱生活
 ---
 {% include JB/setup %}
 
