@@ -71,3 +71,37 @@ body {
 .post p{
 	text-indent: 2em;
 }
+
+.aboucontainer{
+
+}
+
+.doubanbook,.doubanmusic,.aboutme{
+	float: left;
+}
+
+.aboutme{
+	margin-top:10px;
+	width: 240px;
+}
+
+.aboutme h3{
+	margin-bottom: 10px;
+	
+}
+
+.aboutme p{
+	text-indent: 2em;
+}
+
+.doubanbook,.doubanmusic{
+	margin-right: 20px;
+}
+
+.doubanbook h3{
+	margin: 10px 0;
+}
+
+.doubanbook td{
+	padding: 10px;
+

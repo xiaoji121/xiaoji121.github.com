@@ -11,15 +11,18 @@ topbar:
   #- 
   #  url : '/footmark/index.html'
   #  title : 'Footmark'
-  - 
-    url : '/article/index.html'
-    title : '附庸风雅'
   -
     url : '/program/index.html'
     title : '程序似猿'
   -
     url : '/life/index.html'
-    title : 'Shape of my life'
+    title : '生活剪影'
+  - 
+    url : '/article/index.html'
+    title : '附庸风雅'
+  -
+    url : '/about.html'
+    title : '关于我'
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
