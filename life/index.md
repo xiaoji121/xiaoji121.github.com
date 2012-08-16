@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "It's My Life"
+title: "Shape Of My Life"
 ---
 {% include JB/setup %}
 
