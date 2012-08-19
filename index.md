@@ -10,7 +10,6 @@ description: 专注前端开发，喜欢jQuery，喜欢less，喜欢python，爱
 
   <div class="leftContent">
     {% assign posts_all = site.posts %}
-    {% assign count = 10 %}
     {% include custom/posts_all %}
   </div>
 

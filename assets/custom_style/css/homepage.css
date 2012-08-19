@@ -105,3 +105,13 @@ body {
 .doubanbook td{
 	padding: 10px;
 
+}
+
+.postAll{
+	list-style: none;
+}
+
+.postAll li{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}

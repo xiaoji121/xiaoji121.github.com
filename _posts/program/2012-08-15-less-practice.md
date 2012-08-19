@@ -5,7 +5,7 @@ category: program
 tags: [less,css]
 comments: true
 description: |
- 刚刚接触到LESS的时候，看到它的名字，马上就想到了jQuery的那句口号“write less,do more”。看了它的介绍就让人感觉这东西一定很有用，我用less写css后，却有此感。
+ 刚刚接触到LESS的时候，看到它的名字，马上就想到了jQuery的那句口号“write less,do more”。看了它的介绍就让人感觉这东西一定很有用，我用less写css后，确有此感。
 ---
 
 #### 1. LESS带给我的惊喜
@@ -34,7 +34,7 @@ description: |
 
 本项目还有一个特点就是，当Widget够丰富以后，搭建页面变得特别容易，只需要在配置文件中更改相应的配置项的值即可，下面也会有介绍。
 
-### 4. Less走马上任
+#### 4. Less走马上任
 
 先看一段代码：
 
