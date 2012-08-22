@@ -15,8 +15,10 @@ description: 专注前端开发，喜欢jQuery，喜欢less，喜欢python，爱
   </div>
 
   <div class="rightContent">
-    <div class="weiboArea">
-      {% include custom/weibo %}
+    <div class="archive">
+      <h1>文章归档</h1>
+      {% assign posts_collate = site.posts %}
+      {% include JB/posts_collate %}
     </div>
   </div>
 </div>

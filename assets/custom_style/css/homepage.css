@@ -22,14 +22,35 @@ body {
 }
 
 .leftContent{
-	width: 740px;
+	width: 660px;
 	float: left;
 	margin-right: 10px;
 }
 
 .rightContent{
-	width: 240px;
+	width: 320px;
 	float: left;
+}
+
+.rightContent .archive h1{
+	font-size: 18px;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+
+.rightContent .archive h2{
+	font-size: 16px;
+	line-height: 18px;
+	padding-bottom: 5px;
+}
+
+.rightContent .archive h3{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.rightContent .archive .postAll{
+	margin-left: 5px;
 }
 
 .splash{

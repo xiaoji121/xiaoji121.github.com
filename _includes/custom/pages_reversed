@@ -1,7 +1,7 @@
 {% if site.JB.pages_icons.provider == "custom" %}
   {% include custom/pages_icons %}
 {% else %}
-  {% for node in pages_icons reversed %}
+  {% for node in pages_icons %}
     {% if group == null or group == node.group %}
       <li class="span4 page_icon">
         <div class="thumbnail">
