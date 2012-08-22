@@ -4,6 +4,7 @@ title: "FireFox下的table-layout:fixed"
 category: program
 tags: [css]
 comments: true
+keywords: table-layout,css属性，fixed,ie6
 description: |
  几次项目中，使用表格时都遇到了设置table-layout属性的表格单元格宽度和其他浏览器的差异性问题，今天终于搞明白了。
 ---

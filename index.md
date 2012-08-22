@@ -1,6 +1,7 @@
 ---
 layout: page
-title: 前端开发_猿来如此_xiaoji121的个人博客
+title: 前端开发_前端技术博客_生活感悟博客
+keywords: 前端开发,css,js,less,javascript,git,python
 description: 专注前端开发，喜欢jQuery，喜欢less，喜欢python，爱生活
 ---
 {% include JB/setup %}

@@ -4,6 +4,7 @@ title: "Less在实践中的应用"
 category: program
 tags: [less,css]
 comments: true
+keywords: less,less实践，用less写css
 description: |
  刚刚接触到LESS的时候，看到它的名字，马上就想到了jQuery的那句口号“write less,do more”。看了它的介绍就让人感觉这东西一定很有用，我用less写css后，确有此感。
 ---

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "关于我"
+keywords: 前端开发,关于我，猿来儒此
 description: "关于这个前端"
 ---
 {% include JB/setup %}

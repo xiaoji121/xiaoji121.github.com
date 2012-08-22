@@ -4,6 +4,7 @@ title: "听音乐"
 category: article
 tags: [express]
 comments: true
+keywords: 音乐，感悟，生活，中国好声音
 description: |
  不得不承认，音乐是我们生活的必需品，无法想象没有音乐，我们的生活将是什么样子。音乐，可能在不同人的身上有不同的意义。
 ---
