@@ -6,21 +6,20 @@ description: 专注前端开发，喜欢jQuery，喜欢less，喜欢python，爱
 ---
 {% include JB/setup %}
 
-<div class="content clear">
-  <p class="motto">躺着看书，站着做人</p>
+<div class="category Home">
+  <div class="wrapper">躺着看书，站着做人</div>
+</div>
 
-  <div class="leftContent">
+<div class="mainContent wrapper fd-clr">
+  <div class="content cell c66">
+    <div class="side_bg"></div>
     {% assign posts_all = site.posts %}
     {% include custom/posts_all %}
   </div>
 
-  <div class="rightContent">
-    <div class="archive">
-      <h1>文章归档</h1>
-      {% assign posts_collate = site.posts %}
-      {% include JB/posts_collate %}
-    </div>
-  </div>
+  <aside class="cell c32 last">
+      {% include custom/aside %}
+  </aside>
 </div>
 
 

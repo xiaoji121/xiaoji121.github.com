@@ -7,40 +7,50 @@
     {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link href="/assets/custom_style/css/homepage.css" rel="stylesheet">
     <link href="/assets/custom_style/css/prettify.css" rel="stylesheet">
+    <link href="/assets/custom_style/css/reset.css" rel="stylesheet" media="screen,all">
+    <link href="/assets/custom_style/css/font.css" rel="stylesheet" media="screen,all">
+    <link href="/assets/custom_style/css/less/mynewhomepage.css" rel="stylesheet" media="screen,all">
     <script type="text/javascript" src="/assets/custom_style/js/modernizr.js"></script>
     <script type="text/javascript" src="/assets/custom_style/js/prettify.js"></script>
   </head>
 
   <body onload="prettyPrint()">
 
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
+    <header role="banner" class="c100">
+      <div class="wrapper fd-clr">
+        <h1 class="logo cell c15">
+          <a href="{{ HOME_PATH }}">{{ site.title }}</a>
+        </h1>
+        <nav role="navigation" class="cell c66 last">
+          <ul class="menu">
+            {% assign pages_list = site.topbar %}
+            {% include JB/pages_list %}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="allcontent">
+      {{ content }}
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <div class="cell c66 hide_mobile">
+          <p>With help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          </p>
+          <ul class="seo fd-clr">
             {% assign pages_list = site.topbar %}
             {% include JB/pages_list %}
           </ul>
         </div>
+        <div class="cell c15 last">
+          <p>&copy; Dongming 2012 </p>
+        </div>
       </div>
-    </div>
-
-    <div class="container">
-
-      {{ content }}
-
-      <footer>
-        <p>&copy; {{ site.author.name }} 2012 
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
-
-    </div> <!-- /container -->
+    </footer>
 
     <script type="text/javascript">
       var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");

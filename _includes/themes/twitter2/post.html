@@ -1,11 +1,18 @@
-<div class="row">
-  <div class="span9" style="width: 85%; margin-left: 90px;">
-    <div class="content post">
-      <h1 class="title">{{ page.title }}</h1>
-      <h5 class="date">{{ page.description }}</h5>
-      {{ content }}
-    </div>
+<div class="mainContent wrapper fd-clr">
+  <div class="content cell c66">
+    <div class="side_bg"></div>
+    <article class="post">
+    	<header>
+    		<h1 class="title">{{ page.title }}</h1>
+    	</header>
+    	<p>{{ page.description }}</p>
+    	{{ content }}
+    </article>
     <hr>
     {% include JB/comments %}
   </div>
+
+  <aside class="cell c32 last">
+      {% include custom/aside %}
+  </aside>
 </div>

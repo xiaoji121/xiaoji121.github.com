@@ -1,26 +1,21 @@
 ---
-layout: splash
+layout: default
 title: "我的工作，也是另外一种生活"
 ---
 {% include JB/setup %}
 
-## HTML/CSS
+<div class="category Coding">
+  <div class="wrapper">程序似猿</div>
+</div>
 
-<ul class="thumbnails">
-  {% assign pages_icons = site.tags.css %}
-  {% include custom/pages_reversed %}
-</ul>
+<div class="mainContent wrapper fd-clr">
+  <div class="content cell c66">
+    <div class="side_bg"></div>
+    {% assign posts_all = site.posts %}
+    {% include custom/posts_program %}
+  </div>
 
-## JavaScript
-
-<ul class="thumbnails">
-  {% assign pages_icons = site.tags.javascript %}
-  {% include custom/pages_reversed %}
-</ul>
-
-## Git
-
-<ul class="thumbnails">
-  {% assign pages_icons = site.tags.git %}
-  {% include custom/pages_reversed %}
-</ul>
+  <aside class="cell c32 last">
+      {% include custom/aside %}
+  </aside>
+</div>

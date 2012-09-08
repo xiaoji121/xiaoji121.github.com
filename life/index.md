@@ -1,26 +1,21 @@
 ---
-layout: splash
+layout: default
 title: "Shape Of My Life"
 ---
 {% include JB/setup %}
 
-## 我的日记
+<div class="category Life">
+  <div class="wrapper">生活剪影</div>
+</div>
 
-<ul class="thumbnails">
-  {% assign pages_icons = site.tags.diary %}
-  {% include custom/pages_reversed %}
-</ul>
+<div class="mainContent wrapper fd-clr">
+  <div class="content cell c66">
+    <div class="side_bg"></div>
+    {% assign posts_all = site.posts %}
+    {% include custom/posts_life %}
+  </div>
 
-## 骑行日志
-
-<ul class="thumbnails">
-  {% assign pages_icons = site.tags.ride %}
-  {% include custom/pages_reversed %}
-</ul>
-
-## 旅途见闻
-
-<ul class="thumbnails">
-  {% assign pages_icons = site.tags.traval %}
-  {% include custom/pages_reversed %}
-</ul>
+  <aside class="cell c32 last">
+      {% include custom/aside %}
+  </aside>
+</div>

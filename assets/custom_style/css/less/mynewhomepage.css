@@ -1,0 +1,275 @@
+/**
+ * my new home page begin
+ */
+header[role="banner"] {
+  height: 70px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1280px) and (min-width: 960px) {
+  .wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .c100 {
+    width: 100%;
+  }
+  .c15 {
+    width: 142px;
+  }
+  .cell {
+    float: left;
+    margin: 0 8px 0 0;
+  }
+  .last {
+    margin-right: 0 !important;
+  }
+  .c66 {
+    width: 632px;
+  }
+  aside.cell {
+    width: 320px !important;
+    float: right;
+  }
+  aside section {
+    width: 266px;
+    padding: 0 18px 20px;
+  }
+}
+.logo {
+  margin-top: 16px;
+  font-size: 26px;
+}
+.logo a {
+  color: #555;
+  text-decoration: none;
+}
+nav {
+  text-align: right;
+  float: right !important;
+}
+.menu {
+  float: right;
+  margin-top: 16px;
+}
+.menu li {
+  float: left;
+}
+.menu li a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #555;
+  text-transform: uppercase;
+  padding: 4px;
+  margin: 0 0 0 10px;
+  text-decoration: none;
+}
+.Home {
+  background-color: #2fc3d2;
+  color: white;
+}
+.Coding {
+  background-color: #7FB539;
+  color: white;
+}
+.Life {
+  background-color: #23A7DF;
+  color: white;
+}
+.Article {
+  background-color: #E03D2E;
+  color: white;
+}
+.About {
+  background-color: #ff7300;
+  color: white;
+}
+.category {
+  float: left;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-style: italic;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.category .wrapper {
+  font-size: 14px;
+}
+.content {
+  position: relative;
+}
+.content .side_bg {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  bottom: 50px;
+  right: 0;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  box-shadow: 3px 0 7px rgba(0, 0, 0, 0.15);
+}
+.content article {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px dotted #b2b2b2;
+}
+.content article h2.title {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background: url(/images/sprite.png) no-repeat -220px -44px;
+}
+.content article h2.title a {
+  color: #333;
+  text-decoration: none;
+}
+.content article.post p {
+  text-indent: 2em;
+  font-size: 14px;
+  line-height: 20px;
+}
+.content article.post img {
+  max-width: 600px;
+  height: auto;
+}
+.content .brief {
+  font-size: 14px;
+  text-indent: 2em;
+  padding: 5px;
+}
+.content .pic img {
+  margin: 10px 0 5px;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-position: center center;
+  padding: 9px;
+}
+aside section {
+  float: right;
+  border-radius: 2px;
+  border: 1px solid #c5c5c5;
+  border-top-color: #e3e3e3;
+  border-bottom-color: #c3c3c3;
+  background-color: white;
+  margin-top: 20px;
+  box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.05), 0 4px 0 -3px #e5e5e5, 0 4px 0 -2px rgba(0, 0, 0, 0.15), 0 4px 4px -1px rgba(0, 0, 0, 0.1);
+}
+aside section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 0;
+}
+aside section .bullet li {
+  padding-left: 16px;
+  background: url(/images/sprite.png) no-repeat -220px 4px;
+  margin: 3px 0;
+}
+aside section .bullet li h3 a {
+  color: #c71882;
+}
+aside section .bullet li h3 a:hover {
+  color: #555;
+  text-decoration: none;
+}
+footer {
+  float: left;
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  height: 60px;
+  background-color: white;
+  padding: 20px 0;
+  color: #555;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
+footer .seo li {
+  float: left;
+}
+footer .seo li a {
+  float: left;
+  color: #999;
+  text-decoration: none;
+  margin: 5px 20px 5px 0;
+}
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+code {
+  padding: 3px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+pre {
+  display: block;
+  padding: 8.5px;
+  margin: 0 0 9px;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+pre.prettyprint {
+  margin-bottom: 18px;
+}
+pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 18px;
+  border-left: 5px solid #eeeeee;
+}
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.5px;
+}
+blockquote small {
+  display: block;
+  line-height: 18px;
+  color: #999999;
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+blockquote.pull-right {
+  float: right;
+  padding-left: 0;
+  padding-right: 15px;
+  border-left: 0;
+  border-right: 5px solid #eeeeee;
+}
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+/**
+ * my new home page end
+ */

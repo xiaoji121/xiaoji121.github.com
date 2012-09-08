@@ -1,0 +1,13 @@
+<section>
+  <h2>最近文章</h2>
+  <ul class="bullet">
+    {% assign posts_collate = site.posts %}
+    {% include JB/posts_collate %}
+  </ul>
+</section>
+<section>
+  <h2>求关注</h2>
+  <div class="weibo">
+    {% include custom/weibo %}
+  </div>
+</section>
