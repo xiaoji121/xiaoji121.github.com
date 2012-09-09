@@ -13,7 +13,7 @@ description: |
 
 其实，这是<a href="http://hi.baidu.com/lijing00333/item/95cf7d0d46c87f18acdc7055" target="_blank">stackoverflow</a>上面的一个问答，回答者给了些题目，并且把这些题目分了类：
 
-### 通用：
+## 通用：
 
 使用过类库吗? 最喜欢哪个? 为什么?自己有写过类库吗? 比如 DOM 的扩展。
 
@@ -27,7 +27,7 @@ ECMAScript 和 JavaScript 的区别是什么?
 
 会为你的 JavaScript 代码写单元测试吗?
 
-### 初/中级：
+## 初/中级：
 
 为什么基本上所有对象都有 toString 方法?
 
@@ -51,7 +51,7 @@ JavaScript 支持类继承吗?
 
 什么是 JSON?
 
-### 高级：
+## 高级：
 
 Can you give me an example of a generator?
 
@@ -69,7 +69,7 @@ JSONP 是如何工作的?
 
 有读过新的 ECMAScript 规范吗? 都有哪些新特性?
 
-### 关于人：
+## 关于人：
 
 谁最初写了 ECMAScript? 知道他在哪工作，以及他的 title 是什么吗?
 
@@ -77,7 +77,7 @@ JSONP 是如何工作的?
 
 谁写了 JSLint?
 
-### 兼容性：
+## 兼容性：
 
 哪些浏览器支持标准的 addEventListener ? 
 

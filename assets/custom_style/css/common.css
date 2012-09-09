@@ -1,0 +1,44 @@
+body{
+	font-family:\5FAE\8F6F\96C5\9ED1, /* 微软雅黑，默认特殊标题字体 */
+                \9ED1\4F53, /* 黑体，win下替换字体 */
+                \6587\6CC9\9A7F\6B63\9ED1\4F53, /* 文泉驿正黑体，unix/linux下替换字体 */
+                \534E\6587\7EC6\9ED1; /* 华文细黑，mac os下替换字体 */
+    font-weight:400; /* 默认为细体 */
+    color: #555;
+    background: #eee url(/images/bg_tile.jpg) top center;
+    position: relative;
+    z-index: 0;
+}
+
+h1{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+code,pre{padding:0 3px 2px;font-family:Menlo,Monaco,"Courier New",monospace;font-size:12px;color:#333333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+code{padding:3px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e8;}
+pre{display:block;padding:8.5px;margin:0 0 9px;font-size:12px;line-height:18px;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;white-space:pre;white-space:pre-wrap;word-break:break-all;word-wrap:break-word;}pre.prettyprint{margin-bottom:18px;}
+pre code{padding:0;color:inherit;background-color:transparent;border:0;}
+blockquote{padding:0 0 0 15px;margin:0 0 18px;border-left:5px solid #eeeeee;}blockquote p{margin-bottom:0;font-size:16px;font-weight:700;line-height:22.5px;}
+blockquote small{display:block;line-height:18px;color:#999999;}blockquote small:before{content:'\2014 \00A0';}
+blockquote.pull-right{float:right;padding-left:0;padding-right:15px;border-left:0;border-right:5px solid #eeeeee;}blockquote.pull-right p,blockquote.pull-right small{text-align:right;}
+q:before,q:after,blockquote:before,blockquote:after{content:"";}
