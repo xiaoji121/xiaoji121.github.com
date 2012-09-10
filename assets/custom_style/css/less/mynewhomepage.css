@@ -7,35 +7,33 @@ header[role="banner"] {
   position: relative;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
 }
-@media screen and (max-width: 1280px) and (min-width: 960px) {
-  .wrapper {
-    width: 960px;
-    margin: 0 auto;
-  }
-  .c100 {
-    width: 100%;
-  }
-  .c15 {
-    width: 142px;
-  }
-  .cell {
-    float: left;
-    margin: 0 8px 0 0;
-  }
-  .last {
-    margin-right: 0 !important;
-  }
-  .c66 {
-    width: 632px;
-  }
-  aside.cell {
-    width: 320px !important;
-    float: right;
-  }
-  aside section {
-    width: 266px;
-    padding: 0 18px 20px;
-  }
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+.c100 {
+  width: 100%;
+}
+.c15 {
+  width: 142px;
+}
+.cell {
+  float: left;
+  margin: 0 8px 0 0;
+}
+.last {
+  margin-right: 0 !important;
+}
+.c66 {
+  width: 632px;
+}
+aside.cell {
+  width: 320px !important;
+  float: right;
+}
+aside section {
+  width: 266px;
+  padding: 0 18px 20px;
 }
 .logo {
   margin-top: 16px;
