@@ -5,9 +5,9 @@
     {% include JB/posts_collate %}
   </ul>
 </section>
-<section>
+<!--<section>
   <h2>求关注</h2>
   <div class="weibo">
     {% include custom/weibo %}
   </div>
-</section>
+</section>-->

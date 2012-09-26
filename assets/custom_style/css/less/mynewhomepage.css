@@ -97,6 +97,7 @@ nav {
 }
 .content {
   position: relative;
+  min-height: 650px;
 }
 .content .side_bg {
   position: absolute;
@@ -137,6 +138,7 @@ nav {
   font-size: 14px;
   text-indent: 2em;
   padding: 5px;
+  margin-bottom: 20px;
 }
 .content .pic img {
   margin: 10px 0 5px;
