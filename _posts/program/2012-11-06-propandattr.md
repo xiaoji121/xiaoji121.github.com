@@ -4,7 +4,7 @@ title: "javascript那些事儿——properties和attributes"
 category: program
 tags: [chrome,extension]
 comments: true
-keywords: javascript,变量，零散，提升
+keywords: javascript,property，attribute，ie
 description: |
  很多人对Javascript中的properties和attributes都很迷惑，在英文中这两个词属同义词。不光是我们，浏览器中的IE8之前的版本包括IE8的兼容模式，对它们同样很迷惑，这是我的一篇翻译文章。
 ---
