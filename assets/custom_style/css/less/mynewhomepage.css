@@ -134,6 +134,15 @@ nav {
   max-width: 600px;
   height: auto;
 }
+.content article.post a {
+  color: #1e50a2;
+}
+.content article.post a:hover {
+  color: #ff7300;
+}
+.content article.post a:visited {
+  color: #6c0087;
+}
 .content .brief {
   font-size: 14px;
   text-indent: 2em;
