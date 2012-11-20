@@ -2,7 +2,7 @@
 layout: post
 title: "javascript那些事儿——properties和attributes"
 category: program
-tags: [chrome,extension]
+tags: [javascript]
 comments: true
 keywords: javascript,property，attribute，ie
 description: |

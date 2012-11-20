@@ -2,7 +2,7 @@
 layout: post
 title: "css3线性渐变"
 category: program
-tags: [chrome,extension]
+tags: [css]
 comments: true
 keywords: css3,渐变，线性渐变
 description: |

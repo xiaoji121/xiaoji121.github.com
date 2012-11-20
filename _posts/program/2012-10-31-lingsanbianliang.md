@@ -2,7 +2,7 @@
 layout: post
 title: "javascript那些事儿——提升：零散变量问题"
 category: program
-tags: [chrome,extension]
+tags: [javascript]
 comments: true
 keywords: javascript,变量，零散，提升
 description: |
