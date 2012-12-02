@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript实现的浮出层</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <meta name="keywords" content="javascript,实现浮出层">
+    <meta name="description" content="一个Javascript实现的浮出层，模拟title效果">
+    <meta name="author" content="xiaoji121">
+    <link href="./overflowlayer.css" rel="stylesheet" media="screen, all">
+    <style type="text/css">
+      .right{float: right;}
+      .top{margin-bottom: 200px;}
+    </style>
+  </head>
+
+  <body>
+    <div id="content">
+      <p class="top">
+        <a href="#" class="moreInformation">鼠标划过显示浮出层</a>
+        <a href="#" class="moreInformation right">鼠标划过显示浮出层</a>
+      </p>
+      
+      <p class="bottom">
+        <a href="#" class="moreInformation">鼠标划过显示浮出层</a>
+        <a href="#" class="moreInformation right">鼠标划过显示浮出层</a>
+      </p>
+    </div>
+    
+
+    <script type="text/javascript" src="../jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./overflowlayer.js"></script>
+    <script type="text/javascript">
+      
+
+      (function($){
+        var popLayer = new XiaoJiUtil.OverflowLayer({
+          'offset': [0,20],
+          'triggerElement': 'a.moreInformation',
+          'rootId': '#content',
+          'width': 300
+        });
+
+        $('a.moreInformation','#content').mouseenter(function(){
+          popLayer.renderDataToLayer('<p>hello world!</p>');
+        });
+
+      })(jQuery);
+
+      
+    </script>
+  </body>
+
+</html>
