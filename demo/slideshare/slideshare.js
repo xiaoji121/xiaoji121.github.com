@@ -55,14 +55,14 @@ jQuery.namespace('QingCheng.util');
 
 				$("img","#slideShare_item").each(function( i, e ) {
 					var imgInfoObj = {};
-					imgInfoObj.orginalWidth = $(e).width();
-					imgInfoObj.originalHeight = $(e).height();
+					imgInfoObj.orginalWidth = $(e).attr("owidth");
+					imgInfoObj.originalHeight = $(e).attr("oheight");
 					imgInfoObj.imgSrc = $(e).attr("src");
 					imgInfoArray.push(imgInfoObj);
 				});
 
 				this.imgInfoArr = imgInfoArray;
-				// console.log(imgInfoArray)
+				 //console.log(imgInfoArray)
 			},
 
 			__createShim: function() {
@@ -138,6 +138,7 @@ jQuery.namespace('QingCheng.util');
 
 				if( imgMiddleHeight > this.viewportHeight ) {
 					// 如果图片高度大于窗口可视高度
+					
 					imgMiddleHeight = this.viewportHeight - 50;
 					imgMiddleWidth = (this.imgInfoArr[this.middleImgIndex].orginalWidth / this.imgInfoArr[this.middleImgIndex].originalHeight) * imgMiddleHeight;
 					$("div.middle img","#slideShare_container").css({
