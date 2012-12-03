@@ -1,0 +1,45 @@
+html{
+	overflow: hidden;
+}
+
+#shim_layer{
+	background-color: #000;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#slideShare_item{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.slideshareContainer{
+
+}
+
+.slideshareContainer .middle,
+.slideshareContainer .left,
+.slideshareContainer .right{
+	position: absolute;
+	overflow: hidden;
+}
+
+.slideshareContainer .left,
+.slideshareContainer .right{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: pointer
+}
+
+.slideshareContainer .left:hover,
+.slideshareContainer .right:hover{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
