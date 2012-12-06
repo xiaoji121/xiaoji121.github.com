@@ -155,6 +155,18 @@ nav {
   background-position: center center;
   padding: 9px;
 }
+.content .lifeContainer {
+  margin: 5px 0;
+}
+.content .lifeContainer .year {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.content .lifeContainer .postlist li {
+  float: left;
+  width: 150px;
+  margin-bottom: 5px;
+}
 aside section {
   float: right;
   border-radius: 2px;

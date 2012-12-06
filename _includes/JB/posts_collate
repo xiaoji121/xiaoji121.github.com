@@ -20,17 +20,18 @@ Usage:
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
 {% else %}
-  {% for post in posts_collate limit:20 %}
+  {% for post in posts_collate %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-    
-    <li>
-      <h3>
-        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      </h3>
-    </li>
+    {% if post.tags[0] != "diary" %}
+      <li>
+        <h3>
+          <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        </h3>
+      </li>
+    {% endif %}
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}
