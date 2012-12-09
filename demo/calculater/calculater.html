@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>calculater</title>
+    <link href="/assets/custom_style/css/screen/20120909/style.css" rel="stylesheet" media="screen, all">
+    <style type="text/css">
+      body{
+        background: none;
+      }
+
+      .calculater{
+        margin: 30px 0 30px 30px;
+      }
+
+      .result{
+        margin-bottom: 5px;
+      }
+
+      .result input{
+        width: 241px;
+        padding: 3px
+      }
+
+      .col-1,.col-2{
+        float: left;
+      }
+
+      .col-1 p{
+        margin-bottom: 5px;
+      }
+
+      .bt{
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: top;
+      }
+
+      .bt.disabled{
+        width: 28px;
+        height: 28px;
+        padding: 15px;
+        cursor: default;
+      }
+
+      .bt.zero{
+        width: 82px;
+        text-align: left;
+      }
+
+      .col-2{
+        width: 62px;
+        margin-left: 3px;
+      }
+
+      .col-2 .bt{
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .col-2 .bt.sum{
+        padding: 53px 20px;
+      }
+
+      .col-2 .bt.equal{
+        padding: 53px 20px;
+      }
+
+      .smalltip{
+        padding-left: 30px;
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="doc">
+      <p class="smalltip"><strong>请在Chrome或是FireFox下查看</strong></p>
+      <div class="calculater">
+        <div class="result">
+          <input type="text" class="cal_result">
+        </div>
+        <div class="handle fd-clr">
+          <div class="col-1">
+            <p>
+              <span class="bt disabled">Num Lock</span>
+              <span class="bt">/</span>
+              <span class="bt">*</span>
+            </p>
+            <p>
+              <span class="bt">7</span>
+              <span class="bt">8</span>
+              <span class="bt">9</span>
+            </p>
+            <p>
+              <span class="bt">4</span>
+              <span class="bt">5</span>
+              <span class="bt">6</span>
+            </p>
+            <p>
+              <span class="bt">1</span>
+              <span class="bt">2</span>
+              <span class="bt">3</span>
+            </p>
+            <p>
+              <span class="bt zero">0</span>
+              <span class="bt">.</span>
+            </p>
+          </div>
+          <div class="col-2">
+            <span class="bt sub">-</span>
+            <span class="bt sum">+</span>
+            <span class="bt equal">=</span>
+          </div>
+        </div>
+      </div>
+      <p><a href="/program/array-extras.html">[返回文章]</a></p>
+      <div class="bTongji" style="display:none">
+          <script type="text/javascript">
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0e4b33a036c9c7bebcee4313af2fa38f' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="/assets/custom_style/js/screen/20120909/style.js"></script>
+    <script type="text/javascript">
+      (function($){
+
+        function calculate( calculation ) {
+          var parts = calculation.match(
+            //digits       |operators|whitespace
+            /(?:\-?[\d\.]+)|[-\+\*\/]|\s+/g
+          );
+          
+          if( calculation !== parts.join("") ) {
+            throw new Error("Couldn't parse calculation");
+          }
+
+          parts = parts.map(Function.prototype.call,String.prototype.trim);
+          parts = parts.filter(Boolean);
+
+          var nums = parts.map(parseFloat);
+          var processed = [];
+
+          for( var i = 0; i < parts.length; i++ ) {
+            if( nums[i] === nums[i] ) {
+              processed.push( nums[i] );
+            } else {
+              switch( parts[i] ) {
+                case "+":
+                  continue;
+                case "-":
+                  processed.push(nums[++i] * -1);
+                  break;
+                case "*":
+                  processed.push(processed.pop() * nums[++i]);
+                  break;
+                case "/":
+                  processed.push(processed.pop() / nums[++i]);
+                  break;
+                default:
+                  throw new Error("unknown operation: " + parts[i]);
+              }
+            }
+          }
+
+          return processed.reduce(function(result,elem) {
+            return result + elem;
+          });
+        }
+
+        $(function(){
+          $("span.bt","#doc").click(function() {
+          if( $(this).hasClass("disabled") ) {
+            return ;
+          }
+          
+          var nowval = $("input.cal_result","#doc").val();
+
+          if( $(this).hasClass("equal") ) {
+            $("input.cal_result","#doc").val( calculate(nowval) );
+          } else {
+            $("input.cal_result","#doc").val(nowval + $(this).text());
+          }
+        });
+        })
+      })(jQuery);
+      
+    </script>
+  </body>
+
+</html>
