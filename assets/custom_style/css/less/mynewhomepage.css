@@ -124,10 +124,13 @@ nav {
   color: #333;
   text-decoration: none;
 }
+.content article.post h1 {
+  margin-bottom: 15px;
+}
 .content article.post p {
   font-size: 14px;
-  line-height: 22px;
-  padding-bottom: 5px;
+  line-height: 24px;
+  margin-bottom: 15px;
 }
 .content article.post img {
   max-width: 600px;
