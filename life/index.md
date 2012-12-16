@@ -11,7 +11,7 @@ title: "Shape Of My Life"
 <div class="mainContent wrapper fd-clr">
   <div class="content cell c66">
     <div class="side_bg"></div>
-    {% assign posts_all = site.posts %}
+    {% assign posts_all = site.categories.life %}
     {% include custom/posts_life %}
   </div>
 

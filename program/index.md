@@ -11,7 +11,7 @@ title: "我的工作，也是另外一种生活"
 <div class="mainContent wrapper fd-clr">
   <div class="content cell c66">
     <div class="side_bg"></div>
-    {% assign posts_all = site.posts %}
+    {% assign posts_all = site.categories.program %}
     {% include custom/posts_program %}
   </div>
 

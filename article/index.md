@@ -11,7 +11,7 @@ title: "抒发骚情的菜地"
 <div class="mainContent wrapper fd-clr">
   <div class="content cell c66">
     <div class="side_bg"></div>
-    {% assign posts_all = site.posts %}
+    {% assign posts_all = site.categories.article %}
     {% include custom/posts_article %}
   </div>
 

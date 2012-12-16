@@ -26,7 +26,6 @@ Usage:
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-    {% if post.category == 'life' %}
       {% if forloop.first %}
         <div class="lifeContainer">
         <h2 class="year">{{this_year}}</h2>
@@ -53,7 +52,6 @@ Usage:
           {% endif %}
         {% endif %}
       {% endif %}
-    {% endif %}
   {% endfor %}
 {% endif %}
 {% assign posts_all = nil %}

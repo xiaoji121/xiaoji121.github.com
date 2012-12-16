@@ -170,6 +170,12 @@ nav {
   width: 150px;
   margin-bottom: 5px;
 }
+.content .lifeContainer .postlist li a {
+  color: #606060;
+}
+.content .lifeContainer .postlist li a:hover {
+  color: #ff7300;
+}
 aside section {
   float: right;
   border-radius: 2px;

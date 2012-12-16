@@ -25,8 +25,6 @@ Usage:
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-
-    {% if post.category == 'program' %}
       <article class="post">
         <header>
           <h2 class="title">
@@ -35,7 +33,6 @@ Usage:
         </header>
         <p>{{post.description}}</p>
       </article>
-    {% endif %}
   {% endfor %}
 {% endif %}
 {% assign posts_all = nil %}
