@@ -176,6 +176,9 @@ nav {
 .content .lifeContainer .postlist li a:hover {
   color: #ff7300;
 }
+.content .lifeContainer .postlist li a:visited {
+  color: #8D00B0;
+}
 aside section {
   float: right;
   border-radius: 2px;
