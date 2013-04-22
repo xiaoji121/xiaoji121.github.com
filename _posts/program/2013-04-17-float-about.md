@@ -175,14 +175,9 @@ IE7 还有一些额外的属性(不完全列表)可以触发hasLayout ：
 
 在实际工作当中，我也遇到过这样的问题。下面的菜单被包含在一个名为wrapper的div当中，扩展菜单是绝对定位的，当wrapper有overflow:hidden时，扩展菜单会被隐藏。当不设overflow时，扩展菜单不被隐藏。下面是demo。
 
-<div class="penCode">
-	<pre class="codepen" data-height="630" data-type="result" data-href="Fqntx" data-user="xiaoji121" data-safe="true"><code></code><a href="http://codepen.io/xiaoji121/pen/Fqntx">Check out this Pen!</a></pre>
-</div>
-<div class="penCode">
-	<pre class="codepen" data-height="630" data-type="result" data-href="wKtnm" data-user="xiaoji121" data-safe="true"><code></code><a href="http://codepen.io/xiaoji121/pen/wKtnm">Check out this Pen!</a></pre>
-</div>
+<iframe width="100%" height="600" src="http://jsfiddle.net/xiaoji121/crP4G/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
+<iframe width="100%" height="600" src="http://jsfiddle.net/xiaoji121/F3Lwu/embedded/result,css,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 2.父元素设置display: table
 

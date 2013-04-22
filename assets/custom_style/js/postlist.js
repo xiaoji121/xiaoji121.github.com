@@ -11,6 +11,8 @@
 					$(ele).hide();
 				}
 			});
+
+			$('aside section').show(300);
 		},
 
 		end: 0
