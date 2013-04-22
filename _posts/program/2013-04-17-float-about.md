@@ -161,6 +161,29 @@ IE7 还有一些额外的属性(不完全列表)可以触发hasLayout ：
 
 1.父元素设置overflow: hidden/auto
 
+利用overflow: hidden方法清除浮动时，可能会引起父元素内部的决定定位元素被隐藏。请注意，这里只是说可能。那么，确切的是什么时候会隐藏绝对定位元素呢？
+
+是否隐藏绝对定位元素实际上取决其包含块（containing block）：
+
+	 If the element has ‘position:absolute’, the containing block is established by the nearest ancestor with a ‘position’ of ‘absolute’, ‘relative’, or ‘fixed’. …
+
+	翻译：如果一个元素有"position:absolute"的定义，则其包含块由最近的拥有"position:absolute|relative|fixed"属性的祖先元素确定......
+
+这意味着一个带有overflow:hidden样式的盒子，它所包含的绝对定位子元素如果溢出，并不会被隐藏——除非该绝对定位元素的包含块（containing block）就是这个盒子本身或位于该盒子内部。也就是说，如果这个绝对定位元素的包含块的层级高于拥有overflow:hidden样式的盒子，那么这个盒子里面的绝对定位元素不会被截断或隐藏。
+
+这里有一个[demo](http://www.tjkdesign.com/lab/clearfix/overflow-and-ap.html)，box1,box2,box3,box4是绝对定位元素，但并没有被#wrapper隐藏，这是因为它们的containing block是html，html并不在#wrapper里面，所以这些绝对定位元素并没有被隐藏。大家可以将#wrapper的position设为relative，再调整box1,box2,box3,box4的绝对定位值看看会发生什么。
+
+在实际工作当中，我也遇到过这样的问题。下面的菜单被包含在一个名为wrapper的div当中，扩展菜单是绝对定位的，当wrapper有overflow:hidden时，扩展菜单会被隐藏。当不设overflow时，扩展菜单不被隐藏。下面是demo。
+
+<div class="penCode">
+	<pre class="codepen" data-height="630" data-type="result" data-href="Fqntx" data-user="xiaoji121" data-safe="true"><code></code><a href="http://codepen.io/xiaoji121/pen/Fqntx">Check out this Pen!</a></pre>
+</div>
+<div class="penCode">
+	<pre class="codepen" data-height="630" data-type="result" data-href="wKtnm" data-user="xiaoji121" data-safe="true"><code></code><a href="http://codepen.io/xiaoji121/pen/wKtnm">Check out this Pen!</a></pre>
+</div>
+
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+
 2.父元素设置display: table
 
 3.父元素同样设置float:left/right
@@ -172,9 +195,14 @@ IE6/7中触发hasLayout,闭合浮动，解决浮动问题
 ## 参考文章
 
 1. [All About Floats](http://css-tricks.com/all-about-floats/)
+
 2. [清理浮动的几种方法以及对应规范说明](http://w3help.org/zh-cn/casestudies/001)
+
 3. [hasLayout && Block Formatting Contexts](http://www.smallni.com/haslayout-block-formatting-contexts/)
+
 4. [那些年我们一起清除过的浮动](http://www.iyunlu.com/view/css-xhtml/55.html)
+
+5. [clearfix改良及overflow:hidden详解【译】](http://www.ofcss.com/2010/10/20/clearfix-reloaded-overflowhidden-demystified-translation.html)
 
 
 
