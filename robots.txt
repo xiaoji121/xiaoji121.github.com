@@ -1,5 +1,6 @@
 # -----------------------------------------------------------------------------
 # fileEncoding = UTF-8
 # -----------------------------------------------------------------------------
-Disallow: /life/diary*?
+User-agent: *
+Disallow: /life/diary*.html
 Sitemap: http://www.yuanlairc.com/sitemap.txt
