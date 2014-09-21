@@ -1,0 +1,29 @@
+{
+  "name": "@ali/threebuddies",
+  "version": "0.0.1",
+  "description": "三体文明游戏",
+  "main": "./js/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:lihao.ylh/threebuddies.git"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "keywords": [
+    "1688",
+    "jstester"
+  ],
+  "author": {
+    "name": "lihao.ylh",
+    "email": "lihao.ylh@alibaba-inc.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1"
+  }
+}

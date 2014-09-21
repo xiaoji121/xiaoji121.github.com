@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>test-population</title>
+    <script src="./lib/sea-debug.js"></script>
+    <script src="./lib/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div id="container">
+    <p>
+        星球人口：<span id="population"></span>
+    </p>
+    <p>
+        星球年龄：<span id="star_age"></span>年
+    </p>
+    <p>
+        星球时代：<span id="era"></span>
+    </p>
+    <p>
+        人口增长率：<span id="population_rate"></span>
+    </p>
+    <p>
+        发生灾难：<span id="is_disaster"></span>
+    </p>
+    <p>
+        灾难持续时间：<span id="disaster_duration"></span>年
+    </p>
+
+
+
+</div>
+
+<script>
+    seajs.config({
+        base: 'http://threebody.com/threebody',
+        alias: {
+        }
+    });
+
+    seajs.use('js/info');
+</script>
+</body>
+</html>
